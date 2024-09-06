@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Email</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+            <style>
+                .container{
+                    position: relative;
+                    width: 600px;
+                    height: 500px;
+                    background: linear-gradient(to top right,#00456e 20%, #25c85d);
+                    color: aliceblue;
+                    border: 300px;
+                    border-radius: 20px;
+                }
+                .interface-inside{
+                    position: absolute;
+                    width: 450px;
+                    height: 400px;
+                    top: 60px;
+                    left: 70px;
+                }
+                input[type="text"] {
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                }
+                input[type="text"]::placeholder {
+                    color: #ccc; 
+                }
+                .underline{
+                    border-bottom: 2px solid rgb(193, 190, 190);
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                .underline-item{
+                    border-bottom: 2px solid rgb(174, 172, 172);
+                    width: 102%;
+                    margin-bottom: 20px;
+                }
+                .interface-item2{
+                    display: flex;
+                }
+                .interface-item1 {
+                    display: flex;
+                    text-align: center;
+                    width: 600px;
+                }
+                .name{
+                    margin-right: 20px;
+                    border: none;
+                    color: aliceblue;
+                }
+                .input-noidung {
+                    background-color: transparent;
+                    border: none;
+                    width: 80%;
+                    height: 70px;
+                    color: aliceblue;
+                }
+                .send{
+                    position: absolute;
+                    width: 60px;
+                    height: 40px;
+                    left: 50%;
+                    border: none;
+                    background-color: #45a049;
+                    text-align: center;
+                    transition: background-color 0.3s ease;
+                }
+                .send:hover {
+                    background-color: #45a049; 
+                }
+                .icon {
+                    display: flex;
+                    align-items: center;
+                }
+                
+            </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="interface-inside">
+            <div class="interface-item1">
+                <h1>Gửi email đến phòng kinh doanh</h1>
+            </div>
+            <div class="interface-item2">
+                <div class="name">
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text"  placeholder="Họ Tên*" >
+                    </div>
+                    <div class="underline-item"></div>
+                  </div>
+                <div class="phone">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="text" placeholder="Di động*">
+                    </div>
+                    <div class="underline-item"></div>
+                </div>
+            </div>
+            <div class="interface-item3">
+                <div class="icon">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="underline"></div>
+            </div>
+            <div class="interface-item4">
+                <div class="icon">
+                    <i class="fa-solid fa-pen"></i>
+                <input type="text" placeholder="Tiêu đề Email">
+                </div>
+                <div class="underline"></div>
+            </div>
+            <div class="interface-item3">
+                <div class="icon">
+                    <i class="fa-brands fa-rocketchat"></i>
+                    <textarea class="input-noidung" name="message" placeholder="Nội dung email..."></textarea>
+                </div>
+                <div class="underline"></div>
+            </div>
+            <button class="send">
+                Gửi đi
+            </button>
+        </div>
+        </div>
+    </body>
+</html>
